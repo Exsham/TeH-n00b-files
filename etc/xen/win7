@@ -1,0 +1,64 @@
+#The name of the guest
+name = 'win7'
+
+#Specifies an HVM guest
+builder = 'hvm'
+
+#Number of virtual cpus
+vcpus = 4
+
+#Restrict the cores that the guest can run on starts whith 0= core #1
+#cpus="1-3"
+
+#Memory avalable to guest
+memory = '4096'
+
+#Power off and reboot actions
+on_xend_stop = "destroy"
+on_poweroff = "destroy"
+on_reboot = "destroy"
+on_crash = "destroy"
+
+#Disks drives of the guest
+disk = [ '/home/jimmydafletch/VM/windows.img,,hda' , '/home/jimmydafletch/VM/Win7.iso,,hdc,,cdrom' ]
+
+#Network device for the guest
+#vif = ['bridge=xenbr0, mac=00:12:3e:6c:2f:02, model=virtio' ]
+
+# Enable VNC
+vnc=1
+vncpasswd=""
+
+#PCI passthrough devices
+pci = [ '01:00.0' , '01:00.1' , '04:00.0' ]
+
+#Enables MSI-INTx translation
+pci_msitranslate=1
+
+#EnablesD0-D3hot power management states
+pci_power_mgmt=1
+
+#Sets boot order 
+boot="c"
+
+#Enables PAE
+#pae=1
+
+#Sets guest to localtime
+localtime=1
+
+#Adds PV features to HVM guest to improve preformance
+xen_platform_pci=1
+viridian=1
+
+#Better emulated graphics
+vga="stdvga"
+
+#Emulated sound card
+#soundhw='hda'
+
+#Sets qemu version
+#device_model_override = '/usr/lib/xen/bin/qemu-dm'
+device_model_version = "qemu-xen-traditional" 
+
+
