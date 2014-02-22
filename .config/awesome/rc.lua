@@ -142,7 +142,7 @@ commsmenu = {
 
 systemcmds = {
 	{ "restart wm", awesome.restart },   
-	{ "exit", "/home/jimmydafletch/.scripts/jf-exit" },
+	{ "exit", "/home/jimmydafletch/.scripts/xs-exit" },
 	--{ "restart PA", "start-pulseaudio-x11" },
 	{ "logout", awesome.quit }
 }
@@ -202,7 +202,7 @@ vicious.register(mpdstatuswidget, vicious.widgets.mpd,
 	function (widget, args)
 	
 			if args["{Title}"] ~= mpdtitle then		
-				awful.util.spawn("/home/jimmydafletch/.scripts/jf-mpdstatus")
+				awful.util.spawn("/home/jimmydafletch/.scripts/xs-mpdstatus")
 				mpdtitle = args["{Title}"]
 				return 'nill'
 			else
