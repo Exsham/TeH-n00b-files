@@ -1,0 +1,3 @@
+#Run pacman with out a password except -R and -D
+
+username hostname= NOPASSWD: /usr/bin/pacman -S*, /usr/bin/pacman -Q*, /usr/bin/pacman -U*
