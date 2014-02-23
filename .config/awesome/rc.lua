@@ -122,6 +122,8 @@ myawesomemenu = {
 	{ "text editor", "geany" },
 	{ "pcmanfm", "pcmanfm" },
 	{ "music", "terminator -e ncmpcpp" },
+	--alt music
+	--{ "music", "chromium --new-window www.pandora.com" },
 }
 
 toolsmenu = {
