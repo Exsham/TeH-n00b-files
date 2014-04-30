@@ -1,0 +1,24 @@
+# A simple script to remove existing pkgbuilds from ~/AUR/src
+# check for update from the AUR and download pkbuilds of updates
+
+SRCLS=$(ls ~/AUR/src)
+
+if [ -n "$SRCLS" ]
+
+        then
+                rm  -r ~/AUR/src/*
+
+fi
+
+COWERUP=$(cower -uq)
+
+if [ -z "$COWERUP" ]
+
+        then
+                echo "There are no updates from the AUR."
+        else
+
+                cd ~/AUR/src
+
+                cower -d $COWERUP
+fi
