@@ -119,8 +119,9 @@ end
 -- Create a laucher widget and a main menu
 myawesomemenu = {
 	{ "chrome", "chromium" },
+	{ "netflix", "firefox --new-window www.netflix.com" },
 	{ "text editor", "geany" },
-	{ "pcmanfm", "pcmanfm" },
+		{ "pcmanfm", "pcmanfm" },
 	{ "music", "terminator -e ncmpcpp" },
 	--alt music
 	--{ "music", "chromium --new-window www.pandora.com" },
