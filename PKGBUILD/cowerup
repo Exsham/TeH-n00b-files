@@ -7,7 +7,7 @@ url="https://github.com/Exsham/TeH-n00b-files"
 license=('unknown')
 depends=('cower')
 source=('https://raw.githubusercontent.com/Exsham/TeH-n00b-files/master/cowerup/cowerup')
-md5sums=('738f3e6097d2294a6ba787d6321e33fb')
+md5sums=('SKIP')
 
 
 
