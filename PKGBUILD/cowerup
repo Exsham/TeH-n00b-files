@@ -1,6 +1,6 @@
 pkgname=cowerup
-pkgver=1.0
-pkgrel=2
+pkgver=1.1
+pkgrel=1
 pkgdesc="A script to check for AUR updates and download them using cower"
 arch=('any')
 url="https://github.com/Exsham/TeH-n00b-files"
