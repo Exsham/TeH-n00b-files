@@ -6,7 +6,7 @@ SRCLS=$(ls ~/AUR/src)
 if [ -n "$SRCLS" ]
 
         then
-                rm  -rfv ~/AUR/src/*
+                rm  -rf ~/AUR/src/*
 
 fi
 
