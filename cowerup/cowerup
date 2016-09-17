@@ -2,23 +2,23 @@
 # check for update from the AUR and download pkbuilds of updates
 
 SRCLS=$(ls ~/AUR/src)
-
+#check to see ir ~/AUR/src is empty
 if [ -n "$SRCLS" ]
-
+# delete everything if it is not
         then
                 rm  -rf ~/AUR/src/*
 
 fi
-
+#use cower to check for updates listing just pkg names
 COWERUP=$(cower -uq)
-
+#  if there is a out put to cower -uq
 if [ -z "$COWERUP" ]
-
+# print  no updates if no output
         then
                 echo "There are no updates from the AUR."
         else
-
+# cd to src dir
                 cd ~/AUR/src
-
+# download output of cower -uq to src dir
                 cower -d $COWERUP
 fi
