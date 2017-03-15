@@ -1,0 +1,17 @@
+pkgname=xs-tap
+pkgver=1.0
+pkgrel=1
+pkgdesc="A script to get the vaules of xinput id and props for tapping and use them"
+arch=('any')
+url="https://github.com/Exsham/TeH-n00b-files"
+license=('unknown')
+depends=('bash')
+source=('https://raw.githubusercontent.com/Exsham/TeH-n00b-files/master/xs-tap/xs-xs-tap')
+md5sums=('SKIP')
+
+
+
+package() {
+
+install -Dm 755 xs-tap $pkgdir/usr/bin/xs-tap
+}
