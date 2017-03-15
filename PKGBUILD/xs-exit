@@ -1,0 +1,17 @@
+pkgname=xsexit
+pkgver=1.0
+pkgrel=1
+pkgdesc="A script to provide a reboot and shutdown dialog"
+arch=('any')
+url="https://github.com/Exsham/TeH-n00b-files"
+license=('unknown')
+depends=('python2')
+source=('https://raw.githubusercontent.com/Exsham/TeH-n00b-files/master/.scripts/xs-exit')
+md5sums=('SKIP')
+
+
+
+package() {
+
+install -Dm 755 xs-exit $pkgdir/usr/bin/xs-exit
+}
