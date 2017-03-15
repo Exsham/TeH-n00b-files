@@ -1,5 +1,5 @@
 #! /bin/bash
-#a script to get the vaules of xinput id and props for tapping and use them
+#A script to get the vaules of xinput id and props for tapping and use them
 
 touchvar=$(xinput | grep TouchPad)
 
