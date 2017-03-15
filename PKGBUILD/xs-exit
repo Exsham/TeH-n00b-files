@@ -1,4 +1,4 @@
-pkgname=xsexit
+pkgname=xs-exit
 pkgver=1.0
 pkgrel=1
 pkgdesc="A script to provide a reboot and shutdown dialog"
