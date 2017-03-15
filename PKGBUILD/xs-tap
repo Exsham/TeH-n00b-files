@@ -6,7 +6,7 @@ arch=('any')
 url="https://github.com/Exsham/TeH-n00b-files"
 license=('unknown')
 depends=('bash')
-source=('https://raw.githubusercontent.com/Exsham/TeH-n00b-files/master/xs-tap/xs-xs-tap')
+source=('https://raw.githubusercontent.com/Exsham/TeH-n00b-files/master/xs-tap/xs-tap')
 md5sums=('SKIP')
 
 
