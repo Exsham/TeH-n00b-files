@@ -1,22 +1,25 @@
 #! /bin/bash
-#A script to get the vaules of xinput id and props for tapping and use them
-
+# A script to get the vaules of xinput id and props for tapping and use them
+# Get the line from xinput for the touchpad
 touchvar=$(xinput | grep TouchPad)
 
-
+# Find the start of the id=XX epressed in a number from the beginning of the line
 idstart=$(echo | awk '{print index("'"${touchvar}"'", "id")}')
 
-
+# Add 3 to the idstart variable
 idstart=$[ idstart = $idstart+3 ]
 
+# Get the number of the id number for the touchpad
 idvar=$(echo | awk '{print substr("'"${touchvar}"'","'"${idstart}"'",2)}')
 
+# Get the lines specific to Tapping Enabled from xinput
 tapvar=$(xinput list-props $idvar | grep Tapping\ Enabled)
 
-
+# Get the number for the Enable Tapping variable.  28 is assumed that the number of
+# characters for the beginning will not change.
 propvar=$(expr substr "${tapvar}" 28 3)
 
-
+# Set Tapping Enabled with a 1 or 0 at the command line
 if [ "$1" = 1 ]
 	then
 		xinput set-prop $idvar $propvar 1
