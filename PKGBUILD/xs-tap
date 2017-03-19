@@ -1,5 +1,5 @@
 pkgname=xs-tap
-pkgver=1.0
+pkgver=1.1
 pkgrel=1
 pkgdesc="A script to get the vaules of xinput id and props for tapping and use them"
 arch=('any')
