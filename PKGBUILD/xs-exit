@@ -5,7 +5,7 @@ pkgdesc="A script to provide a reboot and shutdown dialog"
 arch=('any')
 url="https://github.com/Exsham/TeH-n00b-files"
 license=('unknown')
-depends=('python2, pygtk')
+depends=('python2' 'pygtk')
 source=('https://raw.githubusercontent.com/Exsham/TeH-n00b-files/master/.scripts/xs-exit')
 md5sums=('SKIP')
 
